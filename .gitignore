@@ -1,0 +1,16 @@
+#intellij IDEA
+.idea/
+**/*.iml
+
+
+#builds
+
+target/
+
+#JS
+
+bower_components
+node_modules
+node
+*.log
+

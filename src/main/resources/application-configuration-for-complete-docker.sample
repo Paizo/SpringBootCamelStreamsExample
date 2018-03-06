@@ -1,0 +1,61 @@
+#application.yml reference for complete application docker container
+
+server:
+  port: 8080
+
+management:
+  port: 9001
+
+spring:
+  application:
+    name: SpringBootCamelStreamsExample
+  data:
+    rest:
+      base-path: /api
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    username: balance
+    password: balance
+    url: jdbc:postgresql://balance_db:5432/balance_db?createDatabaseIfNotExist=true
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+paizo:
+  balance:
+    #batch import configuration for CSV and FixedLength
+    camel:
+      batch:
+        timeout: 100
+        maxRecords: 1
+      # file import from directory
+      file:
+        csv:
+          enable: false
+          dir: C:/Users/Paizo/Desktop
+          noop: true
+          recursive: false
+          type: .*.csv
+          delay: 10000
+        prn:
+          enable: false
+          dir: C:/Users/Paizo/Desktop
+          noop: true
+          recursive: false
+          type: .*.txt
+          delay: 10000
+    money:
+      # set the scale (number of digits to the right of the decimal point)
+      # and the rounding mode for money related operation
+      # see java.math.RoundingMode constructor for correct values
+      scale: 2
+      roundingMode: FLOOR
+

@@ -1,0 +1,8 @@
+Name                Address              Postcode Phone          Balance Birthday
+Edgar, Filippe      Kennemerstraat 51RD  1022gg   020 3242381    100000  19800101
+Agent, Smith        Javaplein 131        3432XA   06123123123    50000   19441001
+Alan, Watts         Teslastraat 42       2112 ad  0149-772332    1234.45 19770515
+Egg, Benedict       Waterlooplein 67     3211 AB  06-90367362    123     19660706
+Ash, Groovy         Valentijkade 66zwart 4422 CC  06-99827234    500.5   19831018
+Goku, Sayan         Rozenstraat 22       1022XE   020 530 9111   5780.6  19660311
+PolyGhloth, Ebashit Børkestraße 610      229988   +44 232 998877 9999.34 19981027
