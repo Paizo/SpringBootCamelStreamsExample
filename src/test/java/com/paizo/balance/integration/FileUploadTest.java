@@ -63,7 +63,7 @@ public class FileUploadTest {
         assertThat(personList).isNotNull();
         assertThat(personList.size()).isEqualTo(7);
 
-        List<Person> personByAddress = personRepository.findByAddress("Børkestraße 610");
+        List<Person> personByAddress = personRepository.findByAddress("PiøveDißacco 610");
         assertThat(personByAddress.size()).isEqualTo(1);
         assertThat(personByAddress.get(0).getBalance()).isEqualTo(new BigDecimal("9999.34").setScale(2));
         assertThat(personByAddress.get(0).getBirthday()).isEqualTo(LocalDate.parse("1998-10-27"));
